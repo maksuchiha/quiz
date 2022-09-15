@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Квиз</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form class="form" action="#">
+        <div class="form__block form__block_active">
+            <label for="name">Имя</label>
+            <input class="form__input form__input_name" name="name" id="name" aria-label="" type="text">
+            <label for="lastname">Фамилия</label>
+            <input class="form__input form__input_name" name="lastname" id="lastname" aria-label="" type="text">
+            <button type="button" class="form__button form__button_next">Далее</button>
+        </div>
+        <div class="form__block">
+            <label for="age">Возраст</label>
+            <input class="form__input form__input_age" name="age" id="age" aria-label="" type="text">
+            <label>Пол</label>
+            <div class="form__sex">
+                <div>
+                    <input value="man" checked name="sex" id="man" aria-label="" type="radio">
+                    <label for="man">Мужчина</label>
+                </div>
+                <div>
+                    <input value="woman" name="sex" id="woman" aria-label="" type="radio">
+                    <label for="woman">Женщина</label>
+                </div>
+            </div>
+            <select class="form__country" aria-label="" name="country" id="country">
+                <option value="Belarus">Беларусь</option>
+                <option value="Russia">Россия</option>
+                <option value="Canada">Канада</option>
+                <option value="USA">США</option>
+            </select>
+            <button type="button" class="form__button form__button_next">Далее</button>
+        </div>
+        <div class="form__block">
+            <label for="phone">Телефон</label>
+            <input class="form__input form__input_phone" name="phone" id="phone" aria-label="" type="text">
+            <label for="mail">E-mail</label>
+            <input class="form__input form__input_mail" name="mail" id="mail" aria-label="" type="text">
+            <button class="form__button form__button_send">Отправить</button>
+        </div>
+        <div class="form__thanks">
+            <h3>Спасибо за отправку формы!</h3>
+            <div>
+                <ul>
+                    <li>
+                        Имя:
+                    </li>
+                    <li>
+                        Фамилия:
+                    </li>
+                    <li>
+                        Возраст:
+                    </li>
+                    <li>
+                        Пол:
+                    </li>
+                    <li>
+                        Страна:
+                    </li>
+                    <li>
+                        Телефон:
+                    </li>
+                    <li>
+                        Емейл:
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
